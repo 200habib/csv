@@ -1,14 +1,19 @@
-up:
-	docker compose up -d
+build:
+	docker compose down
+	docker compose up --build -d
 
 down:
 	docker compose down
 
-status:
-	docker compose ps
-	
-hello_world:
-	docker run --rm script-service
+ps_a:
+	docker ps -a
 
-sqlite: 
-	.read database/schema.sql
+ps:
+	docker ps
+
+create_data_sqlite:
+	docker exec -i sqlite-service sqlite3 /data/schema.sqlite < ./sqlite_data/schema.sql
+	docker exec -it sqlite-service sqlite3 /data/schema.sqlite
+	
+sqlite:
+	docker exec -it sqlite-service sqlite3 /data/schema.sqlite
