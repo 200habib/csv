@@ -17,3 +17,9 @@ create_data_sqlite:
 	
 sqlite:
 	docker exec -it sqlite-service sqlite3 /data/schema.sqlite
+
+python:
+	docker exec -it csv-python-app sh
+
+stript:
+	cd data/data_pipeline/clean_and_export.py

@@ -11,6 +11,6 @@ services:
     build: .
     container_name: csv-python-app
     volumes:
-      - .:/usr/src/app
+      - ./data:/data
     stdin_open: true
     tty: true

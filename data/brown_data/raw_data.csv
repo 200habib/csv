@@ -1,0 +1,9 @@
+Date,name,product_ref,price,stock,store_id
+2025-08-29,Apple,PRD001,1.2,50,101
+2025-08-28,Banana,PRD002,0.8,100,102
+2025-08-27,Orange,PRD003,1.5,80,101
+2025-08-29,Apple,PRD001,1.2,50,101
+,Watermelon,PRD004,3.0,20,103
+2025-08-25,Grapes,PRD005,2.5,60,102
+2025-08-30,Mango,PRD006,2.0,,104
+,Cherry,PRD007,1.8,30,105
