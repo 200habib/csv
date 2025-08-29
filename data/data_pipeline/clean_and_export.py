@@ -5,7 +5,7 @@ input_path = "/data/brown_data/raw_data.csv"
 output_path = "/data/gold_data/final_dataset.csv"
 
 df = pd.read_csv(input_path)
-
+    
 df.dropna(inplace=True)
 df.drop_duplicates(inplace=True)
 df['Date'] = pd.to_datetime(df['Date'], format='mixed')
